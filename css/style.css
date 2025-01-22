@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*
 
-Polo - Multipurpose HTML5 Template
-Version: 5.9.9
-Website: https://inspirothemes.com/themes/polo
-License: https://inspirothemes.com/themes/polo/license.html
-Inspiro Themes (https://inspirothemes.com)
-Author: INSPIRO - Ardian Berisha
-Copyright 2021
-
-*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,400,500,600,700,800|Nunito:300,400,600,700,800");
 section { padding: 6rem 0; position: relative; width: 100%; z-index: 1; background-color: #fff; }
 
