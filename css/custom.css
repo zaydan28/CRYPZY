@@ -1,0 +1,21 @@
+/* 
+
+1. Add your custom Css styles below
+2. Place the this code in your template: 
+
+ <link href="css/custom.css" rel="stylesheet">
+
+*/
+.post-item.border .post-item-wrap {
+    border: 2px solid #727272 !important;
+}
+.heading-text.heading-section h2 {
+    color: white;
+}
+.logoTrust {
+    width: 100% !important;
+    height: 70px !important;
+}
+.divTitle {
+    text-align: center;
+}

