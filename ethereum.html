@@ -44,6 +44,7 @@
                             <div class="card-header">
                                 <div class="divTitle mb-5 col-md-12">
                                     <h2 class="card-title">ETHEREUM</h2>
+                                    <h3 id="ethereum-price">Loading...</h3>
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="address">Send Your USDT to This Address with TRON NETWORK(TRC20)</label>
@@ -150,11 +151,30 @@
             copyText.setSelectionRange(0, 99999); // For mobile devices
             navigator.clipboard.writeText(copyText.value);
         // alert("Copied the text: " + copyText.value);
-  }
+        }
+
         function send() {
             alert("Wait 10 - 30 minutes!");
             location.reload();
         }
+
+        async function fetchEthereumPrice() {
+            try {
+                const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd');
+                const data = await response.json();
+                document.getElementById('ethereum-price').innerText = `$${data.ethereum.usd}`;
+            } catch (error) {
+                console.error('Error fetching Ethereum price:', error);
+                document.getElementById('ethereum-price').innerText = 'Error fetching price';
+            }
+        }
+
+// Fetch price when the page loads
+fetchEthereumPrice();
+
+// Refresh price every 60 seconds
+setInterval(fetchEthereumPrice, 60000);
+
     </script>
 </body>
 
